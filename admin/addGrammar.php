@@ -13,7 +13,7 @@ if (!$sectionNumber) {
     <form action="addGrammar.php" method="post">
     Section Number: <input type="text" name="sectionNumber"><br>
     Section:<br>
-    <textarea rows="50" cols="400" name="sectionText">
+    <textarea rows="50" cols="400" name="sectionText"></textarea>
     <input type="submit" value="Submit">
     </form>
   <?php
