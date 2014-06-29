@@ -1,3 +1,6 @@
+<html>
+<body>
+
 <?php
 
 include "../mysql/mysqlConnect.php";
@@ -20,10 +23,12 @@ if (!$sectionNumber) {
 
 } else {
   // Insert and display sections inserted thus far, in section order.
-  echo $sectionNumber + "<br>" + $sectionText;
+  echo $sectionText;
 
 }
 
 mysql_close($con);
 
 ?>
+</body>
+</html>
