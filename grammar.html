@@ -33,6 +33,10 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+	<!-- Scripts
+	================================================= -->
+	<script src="scripts/date.js"></script>
+
 </head>
 <body>
 
@@ -45,8 +49,8 @@
 		<div class="sixteen columns">
 			<a href="index.html"><img src="images/athene-noctua-logo.png" class="scale-with-grid align-center"></a>
 		</div>
-		<div class="eight columns inside-center justinian">DATE</div>
-		<div class="eight columns inside-center justinian">SALVE!</div>
+		<div class="eight columns inside-center justinian small" id="theDate">DATE</div>
+		<div class="eight columns inside-center justinian small">SALVE!</div>
 	</div>
 	<div class="container nav">
 
@@ -60,13 +64,13 @@
 
 
 	<! -- The Table of Contents-->
-<div class="seven columns">&nbsp;<br><div class="column-border justinian small">
+<div class="five columns">&nbsp;<br><div class="column-border justinian small tablet-fixed">
 <u>Table of Contents</u><br><br>
-PART I.<br>
-<font size="-1"><em>Sounds, Accent, Quantity, Etc.</em>
-<ul class="bordered"><li> The Alphabet
-<li> Classification of Sounds
-<li> Sounds of the Letters
+<a href="#Part1">PART I.<br>
+<font size="-1"><em>Sounds, Accent, Quantity, Etc.</em></a>
+<ul class="bordered"><li> <a href="#Sect1">The Alphabet</a>
+<li> <a href="#Sect2">Classification of Sounds</a>
+<li> <a href="#Sect3">Sounds of the Letters</a>
 <li> Syllables
 <li> Quantity
 <li> Accent
@@ -252,8 +256,186 @@ PART VI.<br>
 
 
 	<!-- The Grammar -->
-	<div class="nine columns">Stuff - This is where the Grammar will go and other such stuff. The table of contents will be to the right: </div>
+	<div class="eleven columns"><div class="boxed-area">
 
+	<h2 class="justinian inside-center">A Latin Grammar</h2>
+	<h3 class="inside-center">By Charles E. Bennett</h3>
+	<p class="inside-center">Goldwin Smith Professor of Latin in Cornell University</p>
+	<p><em>Quicquid praecipies, esto brevis. ut cito dicta<br>Percipiant animi dociles teneantque fideles:<br>Omne supervacuum pleno de pectore manat.</em><br>&mdash; [<em>Horace, De Arte Poetica, ll. 335-337.</em>]</p>
+	<p class="inside-center">Allyn and Bacon<br>Boston and Chicago<br>Revised Edition: March 1913.</p>
+	<hr>
+	<h3 class="inside-center justinian">Preface.</h3>
+	<p class="justify"> The present book is a revision of my <em>Latin Grammar</em> originally published in 1895.  Wherever greater accuracy or precision of statement seemed possible, I have endeavored to secure this.  The rules for syllable division have been changed and made to conform to the prevailing practice of the Romans themselves.  In the Perfect Subjunctive Active, the endings <em>-&#299;s, -&#299;mus, -&#299;tis</em> are now marked long. The theory of vowel length before the suffixes <strong>-gnus</strong>, <strong>-gna</strong>, <strong>-gnum</strong>, and also before <strong>j</strong>, has been discarded.  In the Syntax I have recognized a special category of Ablative of Association, and have abandoned the original doctrine as to the force of tenses in the Prohibitive.</p>
+	<p class="justify"> Apart from the foregoing, only minor and unessential modifications have been introduced. In its main lines the work remains unchanged.</p>
+	<p class="inside-right justinian">C. E. B.</p>
+	<p>Ithaca, New York,<br>October 16, 1907.</p>
+	<hr>
+	<h4 class="inside-center justinian">From the Preface to the First Edition.</h4>
+	<p class="justify"> The object of this book is to present <em>the essential facts</em> of Latin grammar in a direct and simple manner, and within the smallest compass consistent with scholarly standards.  While intended primarily for the secondary school, it has not neglected the needs of the college student, and aims to furnish such grammatical information as is ordinarily required in undergraduate courses.</p>
+	<p class="justify"> The experience of German educators in recent years has tended to restrict the size of school-grammars of Latin, and has demanded an incorporation of the main principles of the language in compact manuals of 250 pages.<sup>1</sup> Within the past decade, several grammars of this scope have appeared which have amply met the exacting demands of the full Gymnasial Latin course, &mdash; a period of study representing quite as much reading as that covered by the average American undergraduate.</p>
+	<p class="justify"> The publication in this country of a grammar of similar plan and scope seems fully justified at the present time, as all recent editions of classic texts summarize in introductions the special idioms of grammar and style peculiar to individual authors. This makes it feasible to dispense with the enumeration of many <em>minutiae</em> of usage which would otherwise demand consideration in a student's grammar.</p>
+	<p class="justify"> In the chapter of Prosody, I have designedly omitted all special treatment of the lyric metres of Horace and Catullus, as well as of the measures of the comic poets.  Our standard editions of these authors all give such thorough consideration to versification that repetition in a separate place seems superfluous.</p>
+	<p>Ithaca, New York,<br>December 15, 1894.</p>
+	<p class="justify"><font size="-1"><sup>1</sup> One of the most eminent of living Latinists, Professor Eduard W&ouml;lfflin, of Munich, has expressed the opinion that the essentials may be given within even smaller compass than this. See his Preface to the Schmalz-Wagener <em>Lateinische Grammatik</em>, 1891.</font></p>
+	<hr>
+	
+	<h2 class="inside-center justinian"><a name="Part1"></a>Part I.</h2>
+	<h3 class="inside-center">Sounds, Accent, Quantity.</h3>
+
+	<h4 class="inside-center"><a name="Sect1"></a>The Alphabet.</h4>
+	<p class="section-number">&sect;1</p><p class="justify"> The Latin Alphabet is the same as the English, except that the Latin has no <strong>w</strong>.</p>
+	<p><ol><li class="justify"> <strong>K</strong> occurs only in <em>Kalendae</em> and a few other words; <strong>y</strong> and <strong>z</strong> were introduced from the Greek about 50 B.C., and occur only in foreign words &mdash; chiefly Greek.
+	<li class="justify"> With the Romans, who regularly employed only capitals, <strong>I</strong> served both as vowel and consonant; so also <strong>V</strong>.  For us, however, it is more convenient to distinguish the vowel and consonant sounds, and to write <strong>i</strong> and <strong>u</strong> for the former, <strong>j</strong> and <strong>v</strong> for the latter.  Yet some scholars prefer to employ <strong>i</strong> and <strong>u</strong> in the function of consonants as well as vowels.</ol></p>
+	
+	<h4 class="inside-center"><a name="Sect2"></a>Classification of Sounds.</h4>
+	<p class="section-number">&sect;2</p><ol><li class="justify"> The Vowels are <strong>a</strong>, <strong>e</strong>, <strong>i</strong>, <strong>o</strong>, <strong>u</strong>, <strong>y</strong>. The other letters are Consonants.  The Diphthongs are <strong>ae</strong>, <strong>oe</strong>, <strong>ei</strong>, <strong>au</strong>, <strong>eu</strong>, <strong>ui</strong>.
+	<li class="justify"> Consonants are further subdivided into Mutes, Liquids, Nasals, and Spirants.
+	<li class="justify"> The Mutes are <strong>p</strong>, <strong>t</strong>, <strong>c</strong>, <strong>k</strong>, <strong>q</strong>; <strong>b</strong>, <strong>d</strong>, <strong>g</strong>; <strong>ph</strong>, <strong>th</strong>, <strong>ch</strong>. Of these, &mdash;
+	<ol class="alpha"><li class="justify"> <strong>p</strong>, <strong>t</strong>, <strong>c</strong>, <strong>k</strong>, <strong>q</strong> are voiceless,<sup>1</sup> <em>i.e.</em> sounded <em>without</em> voice or vibration of the vocal cords.
+	<li class="justify"> <strong>b</strong>, <strong>d</strong>, <strong>g</strong>,<sup>2</sup> <em>i.e.</em> sounded <em>with</em> vibration of the vocal cords.
+	<li class="justify"> <strong>ph</strong>, <strong>th</strong>, <strong>ch</strong> are aspirates.  These are confined almost exclusively to words derived from the Greek, and were equivalent to <strong>p + h</strong>, <strong>t + h</strong>, <strong>c + h</strong>, <em>i.e.</em> to the corresponding voiceless mutes with a following breath, as in Eng. <em>loop-hole</em>, <em>hot-house</em>, <em>block-house</em>.</ol>
+	<li class="justify"> The Mutes admit of classification also as
+	<table><tr><td>Labials,</td><td><strong>p</strong>, <strong>b</strong>, <strong>ph</strong>.</td></tr>
+	<tr><td>Dentals (or Linguals),</td><td><strong>t</strong>, <strong>d</strong>, <strong>th</strong>.</td></tr>
+	<tr><td>Gutturals (or Palatals),</td><td><strong>c</strong>, <strong>k</strong>, <strong>q</strong>, <strong>g</strong>, <strong>ch</strong>.</td></tr></table>
+	<li class="justify"> The Liquids are <strong>l</strong>, <strong>r</strong>.  These sounds were voiced.
+	<li class="justify"> The Nasals are <strong>m</strong>, <strong>n</strong>. These were voiced.  Besides its ordinary sound, <strong>n</strong>, when followed by a guttural mute, also had another sound, &mdash; that of <strong>ng</strong> in <em>sing</em>, &mdash; the so-called <strong>n</strong> <em>adulter&#299;num</em>; as, &mdash;
+	<table><tr><td><strong>anceps</strong>, <em>double</em>, pronounced <strong>angceps</strong>.</td></tr></table>
+	<li class="justify"> The Spirants (sometimes called Fricatives) are <strong>f</strong>, <strong>s</strong>, <strong>h</strong>. These were voiceless.
+	<li class="justify"> The Semivowels are <strong>j</strong> and <strong>v</strong>. These were voiced.
+	<li class="justify"> Double Consonants are <strong>x</strong> and <strong>z</strong>. Of these, <strong>x</strong> was equivalent to <strong>cs</strong>, while the equivalence of <strong>z</strong> is uncertain. See <a href="#Sect3" class="blued">&sect; 3.3</a>. 
+	<li class="justify"> The following table will indicate the relations of the consonant sounds: &mdash;
+	<table><thead><tr><td colspan="2">&nbsp;</td><td>Voiceless.</td><td>Voiced.</td><td>Aspirates.</td><td>&nbsp;</td></tr></thead><tr><td rowspan="3">Mutes,</td><td rowspan="3"><img src="images/left-3line-bracket.gif" width="16px" height="100%"></td><td class="inside-center" data-title="Voiceless"><strong>p</strong>,</td><td class="inside-center" data-title="Voiced"><strong>b</strong>,</td><td class="inside-center" data-title="Aspirates"><strong>ph</strong>,</td><td>(Labials).</td></tr>
+	<tr><td class="inside-center" data-title="Voiceless"><strong>t</strong>,</td><td class="inside-center" data-title="Voiced"><strong>d</strong>,</td><td class="inside-center" data-title="Aspirates"><strong>th</strong>,</td><td>(Dentals).</td></tr><tr><td class="inside-center" data-title="Voiceless"><strong>c</strong>, <strong>k</strong>, <strong>q</strong>,</td><td class="inside-center" data-title="Voiced"><strong>g</strong>,</td><td class="inside-center" data-title="Aspirates"><strong>ch</strong>,</td><td>(Gutturals).</td></tr>
+	<tr><td>Liquids,</td><td colspan="2">&nbsp;</td><td class="inside-center" data-title="Voiced"><strong>l</strong>, <strong>r</strong>,</td><td colspan="2">&nbsp;</td></tr>
+	<tr><td>Nasals,</td><td colspan="2">&nbsp;</td><td class="inside-center" data-title="Voiced"><strong>m</strong>, <strong>n</strong>,</td><td colspan="2">&nbsp;</td></tr>
+	<tr><td rowspan="3">Spirants,</td><td rowspan="3"><img src="images/left-3line-bracket.gif" width="16px" height="100%"></td><td class="inside-center" data-title="Voiceless"><strong>f</strong>,</td><td colspan="2">&nbsp;</td><td>(Labial).</td></tr>
+	<tr><td class="inside-center" data-title="Voiceless"><strong>s</strong>,</td><td colspan="2">&nbsp;</td><td>(Dental).</td></tr>
+	<tr><td class="inside-center" data-title="Voiceless"><strong>h</strong>,</td><td colspan="2">&nbsp;</td><td>(Guttural).</td></tr>
+	<tr><td>Semivowels,</td><td colspan="2">&nbsp;</td><td class="inside-center" data-title="Voiced"><strong>j</strong>, <strong>v</strong>.</td><td colspan="2">&nbsp;</td></tr></table> 
+	<ol class="alpha"><li class="justify"> The Double Consonants, <strong>x</strong> and <strong>z</strong>, being compound sounds, do not admit of classification in the above table.</ol></ol>
+	<p class="justify"><font size="-1"><sup>1</sup> For 'voiceless,' 'surd,' 'hard,' or 'tenuis' are sometimes used.<br><sup>2</sup> For 'voiced,' 'sonant,' 'soft,' or 'media' are sometimes used.</font></p>
+
+	<h4 class="inside-center"><a name="Sect3"></a>Sounds of the Letters.</h4>
+	<p class="section-number">&sect;3</p><p class="justify"> The following pronunciation (often called Roman) is substantially that employed by the Romans at the height of their civilization; <em>i.e.</em> roughly, from 50 B.C. to 50 A.D.</p>
+	<ol><li class="justify"> Vowels.
+	<table><tr><td width="50%"><strong>&#257;</strong> as in <em>father</em>;</td><td><strong>&#259;</strong> as in the first syllable of <em>a-ha!</em></td></tr><tr><td><strong>&#275;</strong> as in <em>they</em>;</td><td><strong>&#277;</strong> as in <em>met</em>;</td></tr><tr><td><strong>&#299;</strong> as in <em>machine</em>;</td><td><strong>&#301;</strong> as in <em>pin</em>;</td></tr><tr><td><strong>&#333;</strong> as in <em>note</em>;</td><td><strong>&#335;</strong> as in <em>obey, melody</em>;</td></tr><tr><td><strong>&#363;</strong> as in <em>rude</em>;</td><td><strong>&#365;</strong> as in <em>put</em>;</td></tr><tr><td colspan="2"><strong>y</strong> like French <em>u</em>, German <em>&uuml;</em>.</td></tr></table>
+	<li class="justify"> Diphthongs.
+	<table><tr><td width="30%"><strong>ae</strong> like <em>ai</em> in <em>aisle</em>;</td><td rowspan="2"><strong>eu</strong> with its two elements, <strong>&#277;</strong> and <strong>&#365;</strong> pronounced in rapid succession;</td></tr><tr><td><strong>oe</strong> like <em>oi</em> in <em>oil</em>.</td></tr><tr><td><strong>ei</strong> as in <em>rein</em>;</td><td rowspan="2"><strong>ui</strong> occurs almost exclusively in <em>cui</em> and <em>huic</em>. These words are pronounced as though written <em>kwee</em> and <em>wheek</em>.</td></tr><tr><td><strong>au</strong> like <em>ow</em> in <em>how</em>;</td></tr></table>
+	<li class="justify"> Consonants.<p class="hangingindent justify"><strong>b</strong>, <strong>d</strong>, <strong>f</strong>, <strong>h</strong>, <strong>k</strong>, <strong>l</strong>, <strong>m</strong>, <strong>n</strong>, <strong>p</strong>, <strong>qu</strong> are pronounced as in English, except that <strong>bs</strong>, <strong>bt</strong> are pronounced <em>ps, pt</em>.</p><p class="hangingindent justify"><strong>c</strong> is always pronounced as <em>k</em>.</p><p class="hangingindent justify"><strong>t</strong> is always a plain <em>t</em>, never with the sound of <em>sh</em> as in Eng. <em>oration</em>.</p><p class="hangingindent justify"><strong>g</strong> always as in <em>get</em>; when <strong>ngu</strong> precedes a vowel, <strong>gu</strong> has the sound of <em>gw</em>, as in <strong>anguis</strong>, <strong>languidus</strong>.</p><p class="hangingindent justify"><strong>j</strong> has the sound of <em>y</em> as in <em>yet</em>.</p><p class="hangingindent justify"><strong>r</strong> was probably slightly trilled with the tip of the tongue.</p><p class="hangingindent justify"><strong>s</strong> always voiceless as in <em>sin</em>; in <strong>su&#257;de&#333;</strong>, <strong>su&#257;vis</strong>, <strong>su&#275;sc&#333;</strong>, and in compounds and derivatives of these words, <strong>su</strong> has the sound of <em>sw</em>.</p><p class="hangingindent justify"><strong>v</strong> like <em>w</em>.</p><p class="hangingindent justify"><strong>x</strong> always like <em>ks</em>; never like Eng. <em>gz</em> or <em>z</em>.</p><p class="hangingindent justify"><strong>z</strong> uncertain in sound; possibly like Eng. <em>zd</em>, possibly like <em>z</em>. The latter sound is recommended.</p><p class="hangingindent justify">The aspirates <strong>ph</strong>, <strong>ch</strong>, <strong>th</strong> were pronounced very nearly like our stressed Eng. <em>p, c, t</em> &mdash; so nearly so, that, for practical purposes, the latter sounds suffice.</p><p class="hangingindent justify">Doubled letters, like <strong>ll</strong>, <strong>mm</strong>, <strong>tt</strong>, <em>etc.</em>, should be so pronounced that both members of the combination are distinctly articulated.</p></ol>
+
+	<h4 class="inside-center"><a name="Sect4"></a>Syllables.</h4>
+	<p class="section-number">&sect;4</p><p class="justify"> There are as many syllables in a Latin word as there are separate vowels and diphthongs.</p>
+	<p class="justify"> In the division of words into syllables, &mdash;</p>
+	<ol><li class="justify"> A single consonant is joined to the following vowel; as, <strong>vo-lat</strong>, <strong>ge-rit</strong>, <strong>pe-rit</strong>, <strong>a-dest</strong>.
+	<li class="justify"> Doubled consonants, like <strong>tt</strong>, <strong>ss</strong>, <em>etc.</em>, are always separated; as, <strong>vit-ta</strong>, <strong>mis-sus</strong>.
+	<li class="justify"> Other combinations of two or more consonants are regularly separated, and the first consonant of the combination is joined with the preceding vowel; as, <strong>ma-gis-tr&#299;</strong>, <strong>dig-nus</strong>, <strong>m&#333;n-strum</strong>, <strong>sis-te-re</strong>.
+	<li class="justify"> An exception to Rule 3 occurs when the two consonants consist of a mute followed by <strong>l</strong> or <strong>r</strong> (<strong>pl</strong>, <strong>cl</strong>, <strong>tl</strong>; <strong>pr</strong>, <strong>cr</strong>, <strong>tr</strong>, <em>etc.</em>). In such cases both consonants are regularly joined to the following vowel; as, <strong>a-gr&#333;</strong>, <strong>vo-lu-cris</strong>, <strong>pa-tris</strong>, <strong>m&#257;-tris</strong>.  Yet if the <strong>l</strong> or <strong>r</strong> introduces the second part of a compound, the two consonants are separated; as, <strong>ab-rump&#333;</strong>, <strong>ad-l&#257;tus</strong>.
+	<li> The double consonant <strong>x</strong> is joined to the preceding vowel; as, <strong>ax-is</strong>, <strong>t&#275;x-&#299;</strong>.</ol>
+
+	<h4 class="inside-center"><a name="Sect5"></a>Quantity.</h4>
+	<p class="section-number">&sect;5</p><ol class="big-alpha"><li class="bold justify"> Quantity of Vowels.</li><p class="justify"> A vowel is <em>long</em> or <em>short</em> according to the length of time required for its pronunciation.  No absolute rule can be given for determining the quantity of Latin vowels.  This knowledge must be gained, in large measure, by experience; but the following principles are of aid: &mdash;</p>
+	<ol><li class="justify bold"> A vowel is long,<sup>1</sup> &mdash;</li>
+	<ol class="alpha"><li class="justify"> before <strong>nf</strong> or <strong>ns</strong>; as, <strong>&#299;nf&#257;ns</strong>, <strong>&#299;nferior</strong>, <strong>c&#333;ns&#363;m&#333;</strong>, <strong>c&#275;nse&#333;</strong>, <strong>&#299;nsum</strong>.
+	<li class="justify"> when the result of contraction; as, <strong>n&#299;lum</strong> for <strong>nihilum</strong>.</ol>
+	<li class="justify bold"> A vowel is short, &mdash;</li>
+	<ol class="alpha"><li class="justify"> before <strong>nt</strong>, <strong>nd</strong>; as, <strong>amant</strong>, <strong>amandus</strong>. A few exceptions occur in compounds whose first member has a long vowel; as, <strong>n&#333;ndum</strong> (<strong>n&#333 dum</strong>).
+	<li class="justify"> before another vowel, or <strong>h</strong>; as, <strong>meus</strong>, <strong>trah&#333;</strong>.  Some exceptions occur, chiefly in proper names derived from Greek; as, <strong>Aen&#275;&#257;s</strong>.</ol></ol>
+	<li class="justify bold"> Quantity of Syllables.</li><p class="justify"> Syllables are distinguished as <em>long</em> or <em>short</em> according to the length of time required for their pronunciation.</p>
+	<ol><li class="justify bold"> A syllable is long,<sup>2</sup> &mdash;</li>
+	<ol class="alpha"><li class="justify"> if it contains a long vowel; as, <strong>m&#257;ter</strong>, <strong>r&#275;gnum</strong>, <strong>d&#299;</strong>.
+	<li class="justify"> if it contains a diphthong; as, <strong>causae</strong>, <strong>foedus</strong>.
+	<li class="justify"> if it contains a short vowel followed by <strong>x</strong>, <strong>z</strong>, or any two consonants (except a mute with <strong>l</strong> or <strong>r</strong>); as, <strong>axis</strong>, <strong>gaza</strong>, <strong>rest&#333;</strong>.</ol>
+	<li class="justify"><span class="bold">A syllable is short</span>, if it contains a short vowel followed by a vowel or by a single consonant; as, <strong>mea</strong>, <strong>amat</strong>.
+	<li class="justify"> Sometimes a syllable varies in quantity, <em>viz.</em> when its vowel is short and is followed by a mute with <strong>l</strong> or <strong>r</strong>, <em>i.e.</em> by <strong>pl</strong>, <strong>cl</strong>, <strong>tl</strong>; <strong>pr</strong>, <strong>cr</strong>, <strong>tr</strong>, <em>etc.</em>; as, <strong>&#259;gr&#299;</strong>, <strong>vol&#365;cris</strong>.<sup>3</sup> Such syllables are called <em>common</em>.  In prose they were regularly short, but in verse they might be treated as long at the option of the poet.</ol>
+	<p class="justify">NOTE. &mdash; These distinctions of <em>long</em> and <em>short</em> are not arbitrary and artificial, but are purely natural.  Thus, a syllable containing a short vowel followed by two consonants, as <strong>ng</strong>, is long, because such a syllable requires <em>more time</em> for its pronunciation; while a syllable containing a short vowel followed by one consonant is short, because it takes <em>less time</em> to pronounce it.  In case of the common syllables, the mute and the liquid blend so easily as to produce a combination which takes scarcely more time than a single consonant.  Yet by separating the two elements (as <strong>ag-r&#299;</strong>) the poets were able to use such syllables as long.</p></ol>
+	<p class="justify"><font size="-1"><sup>1</sup> In this book, long vowels are indicated by a horizontal line above them; as, <strong>&#257;</strong>, <strong>&#299;</strong>, <strong>&#333;</strong>, <em>etc.</em>  Vowels not thus marked are short.  Occasionally a curve is set above short vowels; as, <strong>&#277;</strong>, <strong>&#365;</strong>.<br><sup>2</sup> To avoid confusion, the quantity of <em>syllables</em> is not indicated by any sign.<br><sup>3</sup> But if the <strong>l</strong> or <strong>r</strong> introduces the second part of a compound, the preceding syllable is always long; as, <strong>abrump&#333;</strong>.</font></p></ol>
+
+	<h4 class="inside-center"><a name="Sect6"></a>Accent.</h4>
+	<p class="section-number">&sect;6</p>
+
+
+	<h2 class="inside-center justinian"><a name="Part2"></a>Part II.</h2>
+	<h3 class="inside-center">Inflexions.</h3>
+
+
+	<h2 class="inside-center justinian"><a name="Part3"></a>Part III.</h2>
+	<h3 class="inside-center">Particles.</h3>
+
+
+	<h2 class="inside-center justinian"><a name="Part4"></a>Part IV.</h2>
+	<h3 class="inside-center">Word Formation.</h3>
+
+
+	<h2 class="inside-center justinian"><a name="Part5"></a>Part V.</h2>
+	<h3 class="inside-center">Syntax.</h3>
+
+
+	<h2 class="inside-center justinian"><a name="Part6"></a>Part VI.</h2>
+	<h3 class="inside-center">Prosody.</h3>
+
+	<h4 class="inside-center bold"><a name="Sect362"></a>Quantity of Vowels and Syllables.</h4>
+	<h4 class="inside-center">General Principles.</h4>
+
+	<p class="inside-center bold"><a name="Sect363"></a>Quantity of Final Syllables</p>
+	<p class="inside-center"><em>A. Final Syllables ending in a Vowel.</em></p>
+
+	<p class="inside-center"><a name="Sect364"></a><em>B. Final Syllables ending in a Consonant.</em></p>
+
+	<h4 class="inside-center bold"><a name="Sect366"></a>Verse-Structure.</h4>
+	<h4 class="inside-center">General Principles.</h4>
+
+	<h4 class="inside-center">Special Peculiarities.</h4>
+
+	<h4 class="inside-center">The Dactylic Hexameter.</h4>
+
+	<h4 class="inside-center">Dactylic Pentameter.</h4>
+
+	<h4 class="inside-center">Iambic Measures.</h4>
+
+
+	<h3 class="inside-center justinian"><a name="Part7"></a>Supplements to the Grammar.</h3>
+	
+	<h4 class="inside-center justinian"><a name="Sect371"></a>I. Julian Calendar.</h4>
+
+	<h4 class="inside-center justinian"><a name="Sect373"></a>II. Proper Names.</h4>
+
+	<h4 class="inside-center justinian"><a name="Sect374"></a>III. Figures of Syntax and Rhetoric.</h4>
+
+	<h4 class="inside-center">A. Figures of Syntax.</h4>
+	<p class="section-number">&sect;374</p><ol><li class="justify"> <strong>Ell&iacute;psis</strong> is the omission of one or more words; as, &mdash; 
+	<table><tr><td><strong>quid multa</strong>, <em>why (should I say) much?</em></td></tr></table>
+	<li class="justify"> <strong>Brach&yacute;logy</strong> is a brief or condensed form of expression; as, &mdash; 
+	<table><tr><td><strong>ut ager sine cult&#363;r&#257; fr&#363;ctu&#333;sus esse n&#333;n potest, s&#299;c sine doctr&#299;n&#257; animus</strong>,<br><em>as a field cannot be productive without cultivation, so the mind (cannot be productive) without learning.</em></td></tr></table>
+	<p class="justify">Special varieties of Brachylogy are &mdash;</p>
+	<ol class="alpha"><li class="justify"> <strong>Zeugma</strong>, in which one verb is made to stand for two; as, &mdash;
+	<table><tr><td><strong>min&#299;s aut bland&#299;iment&#299;s corrupta</strong> = <em>(terrified) by threats or corrupted by flattery.</em></td></tr></table>
+	<li class="justify"> <strong>Compediary Comparison</strong>, by which a modifier of an object is mentioned instead of the object itself; as, &mdash;
+	<table><tr><td><strong>dissimilis erat Char&#275;s e&#333;rum et fact&#299;s et m&#333;ribus</strong>,<br>lit. <em>Chares was different from their conduct and character,<br>i.e.</em> Chares's conduct and character were different, <em>etc.</em></td></tr></table>
+	</ol>
+	<li class="justify"> <strong>Pl&eacute;onasm</strong> is an unnecessary fullness of expression; as, &mdash;
+	<table><tr><td><strong>prius praed&#299;cam</strong>,<br>lit. <em>I will first say in advance.</em</td></tr></table>
+	<li class="justify"> <strong>Hend&iacute;adys</strong> (<span class="greek">ἓν διὰ δυοῖν</span>, <em>one through two</em>) is the use of two nouns joined by a conjunction, in the sense of a noun modified by a Genitive or an Adjective; as, &mdash;
+	<table><tr><td><strong>febris et aestus</strong>, <em>the heat of fever</em>;<br><strong>celerit&#257;te curs&#363;que</strong>, <em>by swift running.</em></td></tr></table>
+	<li class="justify"> <strong>Prol&eacute;psis</strong>, or <strong>Anticipation</strong>, is the introduction of an epithet in advance of the action which makes it appropriate; as, &mdash;
+	<table><tr><td><strong>submers&#257;s obrue pupp&#275;s</strong>,<br>lit. <em>overwhelm their submerged ships</em>,<br><em>i.e.</em> overwhelm and sink their ships.</td></tr></table>
+	<ol class="alpha"><li class="justify"> The name Prolepsis is also applied to the introduction of a noun or pronoun as object of the main clause where we should expect it to stand as subject of a subordinate clause. Thus: &mdash;
+	<table><tr><td><strong> n&#333;st&#299; M&#257;rcellum quam tardus sit</strong>,<br><em>you known how slow Marcellus is</em><br>(lit. <em>you know Marcellus, how slow he is</em>).</td></tr></table>Both varieties of Prolepsis are chiefly confined to poetry.</ol>
+	<li class="justify"> <strong>Anacol&uacute;thon</strong> is a lack of grammatical consistency in the construction of the sentence; as, &mdash;
+	<table><tr><td><strong>tum Anc&#299;. . . imp&#275;nsius e&#299;s indignit&#257;s cr&#275;scere</strong>,<br><em>then the sons of Ancus. . . their indignation increased all the more.</em></td></tr></table>
+	<li class="justify"> <strong>H&yacute;stern Pr&oacute;teron</strong> consists in the inversion of the natural order of two words or phrases; as, &mdash;
+	<table><tr><td><strong>mor&#257;mur et in media arma ru&#257;mus</strong> = <em>let us rush into the midst of arms and die</em></td></tr></table></ol>
+
+	<h4 class="inside-center"><a name="Sect375"></a>B. Figures of Rhetoric.</h4>
+	<p class="section-number">&sect;375</p><ol><li class="justify"> <strong>L&iacute;totes</strong> (literally <em>softening</em>) is the expression of an idea by the denial of its opposite; as, &mdash;
+	<table><tr><td><strong>haud parum lab&#333;ris</strong>, <em>no little toil</em> (<em>i.e.</em> much toil);</td></tr><tr><td><strong>n&#333;n ign&#333;r&#333;</strong>, <em>I am not ignorant</em> (<em>i.e.</em> I am well aware).</td></tr></table>
+	<li class="justify"> <strong>Oxym&oacute;ron</strong> is the combination of contradictory conceptions; as, &mdash;
+	<table><tr><td><strong>sapi&#275;ns &#299;ns&#257;nia</strong>, <em>wise folly</em>.</td></tr></table>
+	<li class="justify"> <strong>Alliteration</strong> is the employment of a succession of words presenting frequent repetition of the same letter (mostly initial); as, <strong>s&#275;nsim sine s&#275;ns&#363; aet&#257;s sen&#275;scit</strong>.
+	<li class="justify"> <strong>Onomatop&oelig;&#769;ia</strong> is the suiting of sound to sense; as, &mdash;
+	<table><tr><td><strong>quadrupendante putrem sonit&#363; quatit ungula campum</strong><br><em>'And shake with horny hoofs the solid ground.'</em></td></tr></table></ol>
+
+	</div></div>
 	</div>
 <!-- container -->
 
@@ -262,5 +444,8 @@ PART VI.<br>
 	<div class="footer justinian">&middot; <a href="about.html">About This Site</a> &middot; <a href="athene-noctua.html">About the Athene Noctua</a> &middot; <a>Acknowledgements</a> &middot;</div>
 <!-- End Document
 ================================================== -->
+<script language="JavaScript">
+	document.getElementById("theDate").innerHTML = romanDate;
+</script>
 </body>
 </html>

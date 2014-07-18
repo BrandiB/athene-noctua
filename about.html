@@ -33,6 +33,10 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+	<!-- Scripts
+	================================================= -->
+	<script src="scripts/date.js"></script>
+
 </head>
 <body>
 
@@ -45,8 +49,8 @@
 		<div class="sixteen columns">
 			<a href="index.html"><img src="images/athene-noctua-logo.png" class="scale-with-grid align-center"></a>
 		</div>
-		<div class="eight columns inside-center justinian">DATE</div>
-		<div class="eight columns inside-center justinian">SALVE!</div>
+		<div class="eight columns inside-center justinian small" id="theDate">DATE</div>
+		<div class="eight columns inside-center justinian small">SALVE!</div>
 	</div>
 	<div class="container nav">
 
@@ -68,5 +72,8 @@
 	<div class="footer justinian">&middot; <a href="about.html">About This Site</a> &middot; <a href="athene-noctua.html">About the Athene Noctua</a> &middot; <a>Acknowledgements</a> &middot;</div>
 <!-- End Document
 ================================================== -->
+<script language="JavaScript">
+	document.getElementById("theDate").innerHTML = romanDate;
+</script>
 </body>
 </html>

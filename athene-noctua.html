@@ -33,6 +33,10 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+	<!-- Scripts
+	================================================= -->
+	<script src="scripts/date.js"></script>
+
 </head>
 <body>
 
@@ -45,8 +49,8 @@
 		<div class="sixteen columns">
 			<a href="index.html"><img src="images/athene-noctua-logo.png" class="scale-with-grid align-center"></a>
 		</div>
-		<div class="eight columns inside-center justinian">DATE</div>
-		<div class="eight columns inside-center justinian">SALVE!</div>
+		<div class="eight columns inside-center justinian small" id="theDate">DATE</div>
+		<div class="eight columns inside-center justinian small">SALVE!</div>
 	</div>
 	<div class="container nav">
 
@@ -59,7 +63,7 @@
 	<div class="container">
 	<div class="sixteen columns">
 			&nbsp;<br><img src="images/little-owl.png" class="scale-with-grid" align="left">
-			<div class="inside-center justinian column-border"><h2>About<br>The Athene Noctua</h2></div><p class="justify">The Little Owl (<em>athene noctua</em> or "Owl of Minerva") is the companion animal of the Greek goddess Athena and her Roman counterpart Minerva.  Traditionally, before Minerva acquired the attributes of Athena, Romans viewed owls as omens of death and destruction.  After Minerva was merged with Athena, however, the little owl, along with its connections to wisdom and knowledge, accompanied the Roman goddess as well.</p><blockquote><p class="justinian justify">In huius etiam tutelam noctuam volunt, quod sapientia etiam in tenebris proprium fulgorem possideat.</p><p>"And they place the little owl under her tutelage, because wisdom also posseses a special brightness in the dark."</p><footer><cite>"De Minerva," Fulgentius's <u>Mitologiarum</u>, Liber II, I. Fabula de iudicio Paridis</cite></footer></blockquote><br><b><u>Sources:</u></b><ul class="disc"><li> IMAGE: "<a href="http://commons.wikimedia.org/wiki/File:Athene_noctua_(portrait).jpg#mediaviewer/File:Athene_noctua_(portrait).jpg">Athene noctua (portrait)</a>" by <a href="//commons.wikimedia.org/wiki/User:Trebol-a" title="User:Trebol-a">Trebol-a</a> - <span class="int-own-work">Own work</span>. Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a> via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>.<li> <a href="https://archive.org/stream/fabiiplanciadis00fulggoog#page/n62/mode/2up">Fabius Planciades Fulgentius</a>, <em>Opera</em> (1898), <em>Internet Archive: American Libraries</em><li> <a href="http://en.wikipedia.org/w/index.php?title=Little_owl&oldid=614810287">Little Owl</a>, <em>Wikipedia, the Free Encyclopedia</em><li> <a href="http://en.wikipedia.org/w/index.php?title=Minerva&oldid=612466130">Minerva</a>, <em>Wikipedia, The Free Encyclopedia.</em><li> <a href="http://en.wikipedia.org/w/index.php?title=Owl_of_Athena&oldid=592695963">Owl of Minerva</a>, <em>Wikipedia, the Free Encyclopedia</em></ul>
+			<div class="inside-center justinian column-border"><h2>About<br>The Athene Noctua</h2></div><p class="justify lead">The Little Owl (<em>athene noctua</em> or "Owl of Minerva") is the companion animal of the Greek goddess Athena and her Roman counterpart Minerva.  Traditionally, before Minerva acquired the attributes of Athena, Romans viewed owls as omens of death and destruction.  After Minerva was merged with Athena, however, the little owl, along with its connections to wisdom and knowledge, accompanied the Roman goddess as well.</p><blockquote><p class="justinian justify">In huius etiam tutelam <strong>noctuam</strong> volunt, quod sapientia etiam in tenebris proprium fulgorem possideat.</p><p>"And they place the <strong>little owl</strong> under her tutelage, because wisdom also posseses a special brightness in the dark."</p><footer><cite>"De Minerva," Fulgentius's <u>Mitologiarum</u>, Liber II, I. Fabula de iudicio Paridis</cite></footer></blockquote><br><b><u>Sources:</u></b><ul class="disc"><li> IMAGE: "<a href="http://commons.wikimedia.org/wiki/File:Athene_noctua_(portrait).jpg#mediaviewer/File:Athene_noctua_(portrait).jpg">Athene noctua (portrait)</a>" by <a href="//commons.wikimedia.org/wiki/User:Trebol-a" title="User:Trebol-a">Trebol-a</a> - <span class="int-own-work">Own work</span>. Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a> via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>.<li> <a href="https://archive.org/stream/fabiiplanciadis00fulggoog#page/n62/mode/2up">Fabius Planciades Fulgentius</a>, <em>Opera</em> (1898), <em>Internet Archive: American Libraries</em><li> <a href="http://en.wikipedia.org/w/index.php?title=Little_owl&oldid=614810287">Little Owl</a>, <em>Wikipedia, the Free Encyclopedia</em><li> <a href="http://en.wikipedia.org/w/index.php?title=Minerva&oldid=612466130">Minerva</a>, <em>Wikipedia, The Free Encyclopedia.</em><li> <a href="http://en.wikipedia.org/w/index.php?title=Owl_of_Athena&oldid=592695963">Owl of Minerva</a>, <em>Wikipedia, the Free Encyclopedia</em></ul>
 		</div>
 	</div><!-- container -->
 
@@ -68,5 +72,8 @@
 	<div class="footer justinian">&middot; <a href="about.html">About This Site</a> &middot; <a href="athene-noctua.html">About the Athene Noctua</a> &middot; <a>Acknowledgements</a> &middot;</div>
 <!-- End Document
 ================================================== -->
+<script language="JavaScript">
+	document.getElementById("theDate").innerHTML = romanDate;
+</script>
 </body>
 </html>

@@ -60,28 +60,27 @@
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
 		color: #181818;
-		font-family: Justinian;
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
-	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
-	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
-	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+	h1 { font-size: 46px; line-height: 50px; margin-top: 8px; margin-bottom: 3px;}
+	h2 { font-size: 35px; line-height: 40px; margin-top: 8px; margin-bottom: 3px; }
+	h3 { font-size: 28px; line-height: 34px; margin-top: 20px; margin-bottom: 0px; }
+	h4 { font-size: 21px; line-height: 30px; margin-top: 20px; margin-bottom: 0px; }
 	h5 { font-size: 17px; line-height: 24px; }
 	h6 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
 
-	p { margin: 15px 5px; }
+	p { margin: 10px 5px; line-height: 115%; }
 	p img { margin: 0; }
-	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+	p.lead { font-size: 21px; line-height: 27px; color: #444;  }
 
 	em { font-style: italic; }
-	strong { font-weight: bold; color: #333; }
+	strong { font-weight: bold; color: #CB4F16; }
 	small { font-size: 80%; }
 
 /*	Blockquotes  */
 	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #000; font-style: italic; }
-	blockquote { margin: 5px 0px 5px 0px; padding: 5px; border: 1px solid #70A4D1; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+	blockquote { margin: 5px; padding: 5px; border: 1px solid #70A4D1; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 	blockquote cite { display: block; font-size: 12px; color: #555; }
 	blockquote cite:before { content: "\2014 \0020"; }
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
@@ -91,8 +90,10 @@
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
-	a:hover, a:focus { color: #000; }
+	.footer a, .footer a:visited, .column-border a, .column-border a:visited { color: #000; text-decoration: none; outline: 0; font-weight: normal; }
+	a { color: #246FBB; font-weight: bold; text-decoration: none; outline: 0; }
+	.footer a:hover, .footer a:focus, .column-border a:hover, .column-border a:focus { color: #000; text-decoration: underline; font-weight: normal; }
+	a:hover, a:focus { color: #246FBB; font-weight: bold; text-decoration: underline; }
 	p a, p a:visited { line-height: inherit; }
 
 
@@ -101,8 +102,10 @@
 	ul, ol { margin: 5px 0px; }
 	ul.bordered { border-left: solid 1px #444; }
 	ul { list-style: none outside; }
-	ol { list-style: decimal; }
-	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ol { list-style: decimal outside; }
+	ol.alpha { list-style: lower-alpha outside; }
+	ol.big-alpha { list-style: upper-alpha outside; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 20px; }
 	ul.square { list-style: square outside; }
 	ul.circle { list-style: circle outside; }
 	ul.disc { list-style: disc outside; }
