@@ -75,7 +75,7 @@
 	p.lead { font-size: 21px; line-height: 27px; color: #444;  }
 
 	em { font-style: italic; }
-	strong { font-weight: bold; color: #CB4F16; }
+	strong { font-weight: bold; color: #CB4F16; font-family: Junicode; }
 	small { font-size: 80%; }
 
 /*	Blockquotes  */

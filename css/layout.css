@@ -43,9 +43,7 @@ thead {
 }
 thead td { border-right: solid 1px #FFFFFF; }
 
-.container {
-	background-color: #FFFFFF;
-}
+.container { background-color: #FFFFFF; }
 
 
 .footer {
@@ -78,9 +76,7 @@ thead td { border-right: solid 1px #FFFFFF; }
 }
 
 
-.inside-center {
-	text-align: center;
-}
+.inside-center { text-align: center; }
 
 .align-center {
 	display: block;
@@ -88,23 +84,16 @@ thead td { border-right: solid 1px #FFFFFF; }
     	margin-right: auto;
 	}
 
-.nav {
-	background-color: #CB9278;
-}
+.nav { background-color: #CB9278; }
 
-.justify {
-
-	text-align: justify;
-}
+.justify { text-align: justify; }
 
 .hangingindent {
     padding-left: 22px ;
     text-indent: -22px ;
 }
 
-.inside-right {
-	text-align: right;
-}
+.inside-right {	text-align: right; }
 
 sup {
 	font-size: 75%;
@@ -146,13 +135,10 @@ sup {
 	padding: 5px;
 }
 
-.bold {
-	font-weight: bold;
-}
+.bold { font-weight: bold; }
+.small { font-size: 75%; }
+.separated { border-bottom: dotted 1px #246FBB; }
 
-.small {
-	font-size: 75%;
-}
 
 /* #Page Styles
 ================================================== */
@@ -180,6 +166,7 @@ sup {
 	table, tbody, th, td, tr {
 		display: block;
 	}
+	.separated { border-bottom: dotted 1px #246FBB; }
 	thead { display: none; }
 	table th[data-title]:before,
     	table td[data-title]:before {
@@ -201,6 +188,7 @@ sup {
 	table, tbody, th, td, tr {
 		display: block;
 	}
+	tr { border-bottom: dotted 1px #246FBB; }
 	thead { display: none; }
 	table th[data-title]:before,
     	table td[data-title]:before {
@@ -222,6 +210,7 @@ sup {
 	table, tbody, th, td, tr {
 		display: block;
 	}
+	tr { border-bottom: dotted 1px #246FBB; }
 	thead { display: none; }
 	table th[data-title]:before,
     	table td[data-title]:before {
@@ -240,6 +229,7 @@ sup {
 	table, tbody, th, td, tr {
 		display: block;
 	}
+	tr { border-bottom: dotted 1px #246FBB; }
 	thead { display: none; }
 	table th[data-title]:before,
     	table td[data-title]:before {
@@ -255,6 +245,13 @@ sup {
 
 .greek {
 	font-family: Junicode;
+}
+
+.scansion {
+	font-family: Junicode;
+	color: #246FBB;
+	font-weight: bold;
+	font-size: 150%;
 }
 
 /* #Font-Face

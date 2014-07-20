@@ -770,3 +770,4 @@ if (theYear.length != 4) {
 			break;
 	}
 }
+romanDate = "<a href='grammar.html#Sect371'>" + romanDate + "</a>";
