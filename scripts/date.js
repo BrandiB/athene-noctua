@@ -553,9 +553,9 @@ switch(whatDay) { // add day info to expression
 switch(whatMonth) {
 	case 1:
 		if (whatDay == 1 || whatDay == 5 || whatDay == 13) {
-			romanDate = romanDate + "januariis ";
+			romanDate = romanDate + "ianuariis ";
 		} else if (whatDay < 14) {
-			romanDate = romanDate + "januarias ";
+			romanDate = romanDate + "ianuarias ";
 		} else {
 			romanDate = romanDate + "februarias ";
 		}
@@ -584,32 +584,32 @@ switch(whatMonth) {
 		} else if (whatDay < 14) {
 			romanDate = romanDate + "apriles ";
 		} else {
-			romanDate = romanDate + "majas ";
+			romanDate = romanDate + "maias ";
 		}
 		break;
 	case 5:
 		if (whatDay == 1 || whatDay == 7 || whatDay == 15) {
-			romanDate = romanDate + "majis ";
+			romanDate = romanDate + "maiis ";
 		} else if (whatDay < 14) {
-			romanDate = romanDate + "majas ";
+			romanDate = romanDate + "maias ";
 		} else {
-			romanDate = romanDate + "junias ";
+			romanDate = romanDate + "iunias ";
 		}
 		break;
 	case 6:
 		if (whatDay == 1 || whatDay == 5 || whatDay == 13) {
-			romanDate = romanDate + "juniis ";
+			romanDate = romanDate + "iuniis ";
 		} else if (whatDay < 14) {
-			romanDate = romanDate + "junias ";
+			romanDate = romanDate + "iunias ";
 		} else {
-			romanDate = romanDate + "julias ";
+			romanDate = romanDate + "iulias ";
 		}
 		break;
 	case 7:
 		if (whatDay == 1 || whatDay == 7 || whatDay == 15) {
-			romanDate = romanDate + "juliis ";
+			romanDate = romanDate + "iuliis ";
 		} else if (whatDay < 14) {
-			romanDate = romanDate + "julias ";
+			romanDate = romanDate + "iulias ";
 		} else {
 			romanDate = romanDate + "augustas ";
 		}
@@ -656,7 +656,7 @@ switch(whatMonth) {
 		} else if (whatDay < 14) {
 			romanDate = romanDate + "decembres ";
 		} else {
-			romanDate = romanDate + "januarias ";
+			romanDate = romanDate + "ianuarias ";
 		}
 		break;
 	default:

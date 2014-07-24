@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Athene Noctua - Learn Latin!</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
+
+	<!-- Scripts
+	================================================= -->
+	<script src="../scripts/date.js"></script>
+	<script language="JavaScript">
+	</script>
+
+</head>
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class="footer">&nbsp;</div>
+	<div class="container">
+		<!-- Logo -->
+		<div class="sixteen columns">
+			<a href="index.html"><img src="../images/athene-noctua-logo.png" class="scale-with-grid align-center"></a>
+		</div>
+		<div class="eight columns inside-center justinian small" id="theDate">DATE</div>
+		<div class="eight columns inside-center justinian small">SALVE!</div>
+	</div>
+	<div class="container nav">
+
+		<!-- Navigation -->
+		<div class="four columns inside-center"><input type="button" value="LEARN"></div>
+		<div class="four columns inside-center"><input type="button" value="GRAMMAR" onClick="document.location.href='grammar.html'"></div>
+		<div class="four columns inside-center"><input type="button" value="DICTIONARY"></div>
+		<div class="four columns inside-center"><input type="button" value="ACCOUNT"></div>
+	</div>
+	<div class="container">
+	<div class="sixteen columns">
+
+	<h3 class="justinian bold">Word Bank:</h3>
+	<div class="word-bank-box very-wide align-center" id="WordBank"><div class="button word-bank-item" onClick="addAnswer('Alexandra')" id="Alexandra">Alexandra</div> <div class="button word-bank-item" onClick="addAnswer('Britannia')" id="Britannia">Britannia</div> <div class="button word-bank-item" onClick="addAnswer('erat')" id="erat">erat</div> <div class="button word-bank-item" onClick="addAnswer('est')" id="est">est</div> <div class="button word-bank-item" onClick="addAnswer('et')" id="et">et</div> <div class="button word-bank-item" onClick="addAnswer('Hibernia')" id="Hibernia">Hibernia</div> <div class="button word-bank-item" onClick="addAnswer('insula')" id="insula">insula</div> <div class="button word-bank-item" onClick="addAnswer('insulae')" id="insulae">insulae</div> <div class="button word-bank-item" onClick="addAnswer('patria')" id="patria">patria</div> <div class="button word-bank-item" onClick="addAnswer('patriae')" id="patriae">patriae</div> <div class="button word-bank-item" onClick="addAnswer('rĒgĪna')" id="rĒgĪna">r&#275;g&#299;na</div> <div class="button word-bank-item" onClick="addAnswer('rĒgĪnae')" id="rĒgĪnae">r&#275;g&#299;nae</div> <div class="button word-bank-item" onClick="addAnswer('sunt')" id="sunt">sunt</div></div>
+	
+	<h3 class="justinian bold">Translate:</h3>
+	<div class="word-bank-box very-wide align-center"><h4 id="theQuestion" class="justinian bold">The islands are Britain and Ireland.</h4></div>
+	<!-- the required words will be kept in an array created when the page is generated from the MySQL-->
+	<input type="hidden" id="questionNumber" value="1">
+	<h3 class="justinian bold">Answer:</h3>
+	<div class="word-bank-box very-wide align-center" id="AnswerBox">&nbsp;</div>
+	<div class="inside-center"><span id="isRight"></span> <input type="button" value="Check Answer" onClick="checkAnswer()"></div>
+
+	<script>
+	function addAnswer(theAnswer) {
+		if (!document.getElementById('Answer' + document.getElementById(theAnswer).innerHTML)) {
+			var newdiv = document.createElement('div');
+			var divIdName = 'Answer' + document.getElementById(theAnswer).innerHTML;
+			newdiv.setAttribute('id',divIdName);
+			newdiv.setAttribute('class','button word-bank-item');
+			newdiv.innerHTML = document.getElementById(theAnswer).innerHTML;
+			newdiv.setAttribute("onClick","removeAnswer('"+divIdName+"')");
+			document.getElementById('AnswerBox').appendChild(newdiv);
+			document.getElementById('AnswerBox').innerHTML = document.getElementById('AnswerBox').innerHTML + " ";
+			}
+		}
+
+	function removeAnswer(theAnswer) {
+		var byeBye = document.getElementById(theAnswer);
+		document.getElementById('AnswerBox').removeChild(byeBye);
+	}
+
+	function checkAnswer() {
+		if (document.getElementById('Answerinsulae') && document.getElementById('AnswerBritannia') && document.getElementById('AnswerHibernia') && document.getElementById('Answeret') && document.getElementById('Answersunt')) {
+			document.getElementById('isRight').innerHTML = 'Yes!';
+		} else {
+			document.getElementById('isRight').innerHTML = 'No.';
+		}
+	}
+	</script>
+<hr>
+	</div>
+	<div class="sixteen columns">
+
+<!-- To be split up into multiple PHP files once planned out -->
+
+<!--ALPHABET INTRODUCTION (include note on required macrons)-->
+
+<!--VOCAB INTRO 1-->
+
+Alexandra<br>
+Britannia<br>
+H&#299;bernia<br>
+insula<br>
+insulae<br>
+patria<br>
+patriae<br>
+r&#275;g&#299;na<br>
+r&#275;g&#299;nae<br>
+et<br>
+erat<br>
+sunt<br>
+est<br>
+<br>
+<!--GRAMMAR INTRO 1-->
+
+In Latin there is no article.  Hence patria means 'the country,' 'a country,' or simply 'country.'
+
+
+
+
+	Letters from the Glyph font:<br>
+	<br>
+	<span style="font-family: Glyphs">∩</span> - signpost <br>
+	<span style="font-family: Glyphs">✓</span> - check <br>
+	<span style="font-family: Glyphs"></span> - book <br>
+	<span style="font-family: Glyphs"></span> - slider <br>	
+	<span style="font-family: Glyphs"></span> - trojan horse <br>	
+	<span style="font-family: Glyphs"></span> - flag <br>	
+	<span style="font-family: Glyphs"></span> - globe <br>	
+	<span style="font-family: Glyphs"></span> - medal 1 <br>	
+	<span style="font-family: Glyphs"></span> - medal 2 <br>	
+	<span style="font-family: Glyphs"></span> - scroll <br>	
+	<span style="font-family: Glyphs"></span> - full heart <br>	
+	<span style="font-family: Glyphs"></span> - empty heart <br>	
+	<span style="font-family: Glyphs"></span> - full star <br>	
+	<span style="font-family: Glyphs"></span> - empty star <br>	
+	<span style="font-family: Glyphs"></span> - pencil <br>	
+	<span style="font-family: Glyphs"></span> - book 2 <br>
+	<span style="font-family: Glyphs"></span> - trophy <br>
+	<span style="font-family: Glyphs"></span> - trophy <br>
+	<span style="font-family: Glyphs"></span> - full heart 2 <br>	
+	<span style="font-family: Glyphs"></span> - half heart <br>	
+	<span style="font-family: Glyphs"></span> - empty heart 2 <br>	
+	<span style="font-family: Glyphs"></span> - full star 2 <br>	
+	<span style="font-family: Glyphs"></span> - half star <br>	
+	<span style="font-family: Glyphs"></span> - empty star 2 <br>	
+	<span style="font-family: Glyphs"></span> - medal 1 <br>	
+	<span style="font-family: Glyphs"></span> - medal 2 <br>	
+	<span style="font-family: Glyphs"></span> - sword <br>	
+	<span style="font-family: Glyphs"></span> - down left arrow <br>	
+	<span style="font-family: Glyphs"></span> - down arrow <br>	
+	<span style="font-family: Glyphs"></span> - down right arrow <br>	
+	<span style="font-family: Glyphs"></span> - attention <br>	
+	<span style="font-family: Glyphs"></span> - review <br>	
+	<span style="font-family: Glyphs"></span> - eye <br>	
+	<span style="font-family: Glyphs"></span> - anchor <br>	
+	<span style="font-family: Glyphs"></span> - boat <br>	
+	<span style="font-family: Glyphs"></span> - feather <br>
+
+<!--EXERCISE 1 - Vocabulary-->
+
+<!--EXERCISE 2 - Parts of Sentence - <input type="range"> -->
+
+<!--EXERCISE 2 - Into English-->
+
+1. Britannia est patria.<br>
+2. H&#299;bernia est insula.<br>
+3. Alexandra est r&#275;g&#299;na.<br>
+4. Patria est insula.<br>
+5. Insulae sunt patriae.<br>
+6. Britannia et H&#299;bernia sunt insulae.<br>
+7. R&#275;g&#299;na est Alexandra.<br>
+8. Patriae sunt Britannia et H&#299;bernia.<br>
+9. Insula est patria.<br>
+10. Patriae sunt insulae.<br>
+<br>
+<!--EXERCISE 3 - Into Latin - Drag 'n' Drop Pieces-->
+<br>
+1. Britain is the native-land.<br>
+2. The queen is Alexandra.<br>
+3. Ireland is an island.<br>
+4. Britain and Ireland are islands.<br>
+5. The islands are native-lands.<br>
+6. Alexandra is the queen.<br>
+7. The native-land is an island.<br>
+8. The islands are Britain and Ireland.<br>
+9. The native-lands are islands.<br>
+10. The native-land is Ireland.<br>
+
+	</div></div>
+<!-- container -->
+
+	<!--- footer -->
+	<div class="pre-footer">&nbsp;</div>
+	<div class="footer justinian">&middot; <a href="about.html">About This Site</a> &middot; <a href="athene-noctua.html">About the Athene Noctua</a> &middot; <a>Acknowledgements</a> &middot;</div>
+<!-- End Document
+================================================== -->
+<script language="JavaScript">
+	document.getElementById("theDate").innerHTML = romanDate;
+</script>
+</body>
+</html>

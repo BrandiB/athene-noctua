@@ -45,6 +45,33 @@ thead td { border-right: solid 1px #FFFFFF; }
 
 .container { background-color: #FFFFFF; }
 
+.word-bank-item {
+	display: inline;
+}
+
+.word-bank-box
+	{
+		background: #CB9278;
+	  	border: 1px solid #CB9278;
+	  	-moz-border-radius: 5px;
+	  	-webkit-border-radius: 5px;
+	  	border-radius: 5px;
+	  	color: #000;
+	  	font-weight: bold;
+	  	font-family: Justinian;
+		text-decoration: none;
+	  	cursor: pointer;
+		margin-top: 5px;
+	  	margin-bottom: 5px;
+	  	line-height: normal;
+		text-align: center;
+	  	padding: 4px 4px;
+		text-transform: uppercase;
+	}
+
+.very-wide {
+	width: 90%;
+}
 
 .footer {
 	background-color: #CB9278;
@@ -137,7 +164,112 @@ sup {
 
 .bold { font-weight: bold; }
 .small { font-size: 75%; }
+.big { font-size: 150%; }
+.glyph { font-family: Glyphs; font-weight: normal; }
 .separated { border-bottom: dotted 1px #246FBB; }
+
+
+	.button
+	{
+		background: #70A4D1;
+	  	border: 1px solid #70A4D1;
+	  	-moz-border-radius: 5px;
+	  	-webkit-border-radius: 5px;
+	  	border-radius: 5px;
+	  	color: #000;
+	  	display: inline-block;
+	  	font-weight: bold;
+	  	font-family: Justinian;
+		text-decoration: none;
+	  	cursor: pointer;
+		margin-top: 5px;
+	  	margin-bottom: 5px;
+	  	line-height: normal;
+		text-align: center;
+	  	padding: 4px 4px;
+		text-transform: uppercase;
+	}
+	.button:hover
+	{
+		background: #FBE7E3;
+	  	border: 1px solid #FBE7E3;
+	  	-moz-border-radius: 5px;
+	  	-webkit-border-radius: 5px;
+	  	border-radius: 5px;
+	  	color: #000;
+	  	display: inline-block;
+	  	font-weight: bold;
+	  	font-family: Justinian;
+		text-decoration: none;
+	  	cursor: pointer;
+		margin-top: 5px;
+	  	margin-bottom: 5px;
+	  	line-height: normal;
+		text-align: center;
+	  	padding: 4px 4px;
+		text-transform: uppercase;
+	}
+
+	.button:active
+	{
+		background: #000000;
+	  	border: 1px solid #000000;
+	  	-moz-border-radius: 5px;
+	  	-webkit-border-radius: 5px;
+	  	border-radius: 5px;
+	  	color: #FBE7E3;
+	  	display: inline-block;
+	  	font-weight: bold;
+	  	font-family: Justinian;
+		text-decoration: none;
+	  	cursor: pointer;
+		margin-top: 5px;
+	  	margin-bottom: 5px;
+	  	line-height: normal;
+		text-align: center;
+	  	padding: 4px 4px;
+		text-transform: uppercase;
+	}
+	.locked
+	{
+		background: #e0f1ff;
+	  	border: 1px solid #70A4D1;
+	  	-moz-border-radius: 5px;
+	  	-webkit-border-radius: 5px;
+	  	border-radius: 5px;
+	  	color: #444;
+	  	display: inline-block;
+	  	font-weight: bold;
+	  	font-family: Justinian;
+		text-decoration: none;
+		margin-top: 5px;
+	  	margin-bottom: 5px;
+		cursor: default;
+	  	line-height: normal;
+		text-align: center;
+	  	padding: 4px 4px;
+		text-transform: uppercase;
+	}
+	.completed
+	{
+		background: #CB9278;
+	  	border: 1px solid #CB9278;
+	  	-moz-border-radius: 5px;
+	  	-webkit-border-radius: 5px;
+	  	border-radius: 5px;
+	  	color: #000;
+	  	display: inline-block;
+	  	font-weight: bold;
+	  	font-family: Justinian;
+		text-decoration: none;
+	  	cursor: pointer;
+		margin-top: 5px;
+	  	margin-bottom: 5px;
+	  	line-height: normal;
+		text-align: center;
+	  	padding: 4px 4px;
+		text-transform: uppercase;
+	}
 
 
 /* #Page Styles
@@ -267,7 +399,17 @@ sup {
     src: url('../fonts/justv2.eot?#iefix') format('embedded-opentype'),
          url('../fonts/justv2.woff') format('woff'),
          url('../fonts/justv2.ttf') format('truetype'),
-         url('../fonts/justv2.svg#roman_sdregular') format('svg');
+         url('../fonts/justv2.svg#justinian') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Glyphs';
+    src: url('../fonts/glyphs.eot');
+    src: url('../fonts/glyphs.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/glyphs.woff') format('woff'),
+         url('../fonts/glyphs.ttf') format('truetype'),
+         url('../fonts/glyphs.svg#glyphs') format('svg');
     font-weight: normal;
     font-style: normal;
 }

@@ -127,7 +127,6 @@
 /* #Buttons
 ================================================== */
 
-	.button,
 	button,
 	input[type="submit"],
 	input[type="reset"],
@@ -147,12 +146,14 @@
 		margin-top: 5px;
 	  	margin-bottom: 5px;
 	  	line-height: normal;
-		width: 90%;
 		text-align: center;
-	  	padding: 4px 0px;
+	  	padding: 4px 4px;
 	}
 
-	.button:hover,
+	.navigation {
+		width: 90%;
+	}
+
 	button:hover,
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
@@ -172,12 +173,10 @@
 		margin-top: 5px;
 	  	margin-bottom: 5px;
 	  	line-height: normal;
-		width: 90%;
 		text-align: center;
-	  	padding: 4px 0px;
+	  	padding: 4px 4px;
 	}
 
-	.button:active,
 	button:active,
 	input[type="submit"]:active,
 	input[type="reset"]:active,
@@ -197,9 +196,8 @@
 		margin-top: 5px;
 	  	margin-bottom: 5px;
 	  	line-height: normal;
-		width: 90%;
 		text-align: center;
-	  	padding: 4px 0px;
+	  	padding: 4px 4px;
 	}
 
 	/* Fix for odd Mozilla border & padding issues */
@@ -222,7 +220,7 @@
 	input[type="email"],
 	textarea,
 	select {
-		border: 1px solid #ccc;
+		border: 1px solid #CB9278;
 		padding: 6px 4px;
 		outline: none;
 		-moz-border-radius: 2px;
@@ -233,7 +231,6 @@
 		margin: 0;
 		width: 210px;
 		max-width: 100%;
-		display: block;
 		margin-bottom: 20px;
 		background: #fff; }
 	select {
